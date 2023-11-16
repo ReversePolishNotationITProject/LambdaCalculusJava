@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External;
+package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 
@@ -13,20 +13,16 @@ import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 public interface ExternalLambdaTreeParser {
     
     /**
-     * @param info the value of input
-     * @return 
-     * @throws IllegalArgumentException
-     */
-    default LambdaTermRoot parse(ExternalLambdaInfo info) throws IllegalArgumentException
-    {
-        return parse(info.inputString());
-    }
-    
-    /**
      * @param input the value of input
      * @return 
      * @throws IllegalArgumentException
      */
     LambdaTermRoot parse(String input) throws IllegalArgumentException;
     
+    /**
+     * If a variable was not locally declared, a LambdaExpressionParser will call this method to obtain the variable globally.
+     * @param varName
+     * @return 
+     */
+    LambdaTermRoot getMissing(String varName) throws IllegalArgumentException;
 }

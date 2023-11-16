@@ -4,18 +4,16 @@
  */
 package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
 
-import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
-import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Builders.LambdaTermNodeBuilder;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Builders.LambdaTermNodeBuiltInBuilder;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermFilledExpressionNode;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.ExternalLambdaInfo;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.ExternalLambdaTreeParser;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.function.Supplier;
 
 /**
@@ -59,10 +57,18 @@ public final class LambdaExpressionExternalTreePorterParser implements LambdaExp
      */
     public LambdaExpressionExternalTreePorterParser()
     {
-        this(
-            x -> {
-            throw new UnsupportedOperationException("No importer was provided");
-        });       
+        this(new ExternalLambdaTreeParser() {
+            @Override
+            public LambdaTermRoot parse(String input) throws IllegalArgumentException {
+                throw new UnsupportedOperationException("No importer was provided");
+            }
+
+            @Override
+            public LambdaTermRoot getMissing(String varName) throws IllegalArgumentException {
+                throw new UnsupportedOperationException("No importer was provided");
+            }
+        }
+        );    
     }
     
     
@@ -108,10 +114,8 @@ public final class LambdaExpressionExternalTreePorterParser implements LambdaExp
                 // No brackets were used, ending read.
                 index = tokens.size();
             } else if (token.charAt(0) == '{')
-            {
-                var externalTreeInfo = new ExternalLambdaInfo(token.substring(1, token.length() - 1));
-                
-                var root = externalTreeBuilder.parse(externalTreeInfo);
+            {                
+                var root = externalTreeBuilder.parse(token.substring(1, token.length() - 1));
                 
                 node = builder.buildClosedNode(root, List.of());
             } else if (token.equals("["))

@@ -5,7 +5,6 @@
 package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.PN;
 import java.util.List;
 
 /**
@@ -13,20 +12,7 @@ import java.util.List;
  * @author Khoapa
  */
 public interface LambdaExpressionTokenHandler {
-    
-    /**
-     * Get a LambdaTermRoot from a List of tokens with an agreed upon syntax.
-     * Forwards string within curly brackets to a LambdaExpressionTreePorterParser.
-     * @param wrappedTokens
-     * @return
-     * @throws IllegalArgumentException
-     * @throws UnsupportedOperationException 
-     */
-    default LambdaTermRoot parse(PN wrappedTokens) throws IllegalArgumentException, UnsupportedOperationException
-    {
-        return parse(wrappedTokens.tokens());
-    }
-    
+     
     /**
      * Use if the input tokens are obvious and there is no confusion.
      * @param tokens
