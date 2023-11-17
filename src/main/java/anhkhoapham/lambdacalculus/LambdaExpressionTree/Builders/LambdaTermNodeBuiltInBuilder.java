@@ -9,6 +9,9 @@ import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermNamedNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermOpenNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermClosedNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermRoundBracketNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermSquareBracketNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermUnfilledExpressionNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermEntryNode;
 import java.util.Collection;
 
@@ -31,17 +34,17 @@ public final class LambdaTermNodeBuiltInBuilder implements LambdaTermNodeBuilder
         return new LambdaTermEntryNode(name, topNode);
     }
     @Override
-    public LambdaTermExpressionNode buildNamedNode(String name, Collection<LambdaTermExpressionNode> children) {
+    public LambdaTermUnfilledExpressionNode buildNamedNode(String name, Collection<LambdaTermExpressionNode> children) {
         return new LambdaTermNamedNode(name, children);
     }
 
     @Override
-    public LambdaTermExpressionNode buildOpenNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children) {
+    public LambdaTermRoundBracketNode buildOpenNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children) {
         return new LambdaTermOpenNode(substitutedRoot, children);
     }
 
     @Override
-    public LambdaTermExpressionNode buildClosedNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children) {
+    public LambdaTermSquareBracketNode buildClosedNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children) {
         return new LambdaTermClosedNode(substitutedRoot, children);
     }
 }
