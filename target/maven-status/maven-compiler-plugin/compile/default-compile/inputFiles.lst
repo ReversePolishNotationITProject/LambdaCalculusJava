@@ -1,6 +1,7 @@
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermFilledExpressionNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Root\LambdaTermEntryNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Builders\LambdaTermNodeBuiltInBuilder.java
+D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermSquareBracketNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermOpenNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Builders\LambdaTermNodeBuilder.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Iteration\LambdaNodeIterator.java
@@ -13,6 +14,7 @@ D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\Lam
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Iteration\LinkedListStack.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermClosedNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Root\Custom\VoidRoot.java
+D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermRoundBracketNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Root\Custom\NullRoot.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressionTree\Nodes\LambdaTermAbstractNode.java
 D:\Projects\Java\Lib\LambdaCalculus\src\main\java\anhkhoapham\lambdacalculus\LambdaExpressonTree\Parser\LambdaExpressionTokenHandler.java
