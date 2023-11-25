@@ -130,7 +130,9 @@ public final class LambdaExpressionExternalTreePorterParser implements LambdaExp
                 index = scopeEnd;
             }
             else {
-                throw new IllegalArgumentException(token + " in " + Arrays.toString(tokens.toArray()));
+                var root = externalTreeBuilder.getMissing(token);
+                
+                node = builder.buildClosedNode(root, List.of());
             }
 
             if (parent == null)

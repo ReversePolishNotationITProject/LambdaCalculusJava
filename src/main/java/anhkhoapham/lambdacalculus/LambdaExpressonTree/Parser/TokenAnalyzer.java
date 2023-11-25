@@ -50,7 +50,7 @@ public class TokenAnalyzer {
                 return index;
         }
         
-        throw new IllegalArgumentException(Arrays.toString(tokens.toArray()));
+        throw new IllegalArgumentException("Failed to find end bracket: " + Arrays.toString(tokens.toArray()));
     }
     
     @Deprecated
