@@ -5,8 +5,8 @@
 package anhkhoapham.lambdacalculus.LambdaExpressionTree.Root;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.LambdaExpressionExternalTreePorterParser;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.LambdaExpressionParser;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.LambdaExpressionExternalTreePorterParser;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.LambdaExpressionParser;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
