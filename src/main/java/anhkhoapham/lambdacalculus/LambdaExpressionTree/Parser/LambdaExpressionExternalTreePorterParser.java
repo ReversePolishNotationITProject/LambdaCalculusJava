@@ -84,7 +84,7 @@ public final class LambdaExpressionExternalTreePorterParser implements LambdaExp
         
         for (int index = 0; index < tokens.size(); index++) {
             
-            LambdaTermExpressionNode node = null;
+            LambdaTermExpressionNode node;
             
             var token = tokens.get(index);
             

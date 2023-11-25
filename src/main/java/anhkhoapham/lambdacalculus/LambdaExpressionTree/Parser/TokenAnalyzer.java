@@ -36,7 +36,7 @@ public class TokenAnalyzer {
     {
         int parenthesisCount = 1;
         
-        int index = 1;
+        int index = 0;
         
         for(; index < tokens.size(); index++)
         {          
