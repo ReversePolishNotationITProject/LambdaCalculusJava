@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-package anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser;
+package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.LambdaExpressionParser;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.LambdaExpressionExternalTreePorterParser;
