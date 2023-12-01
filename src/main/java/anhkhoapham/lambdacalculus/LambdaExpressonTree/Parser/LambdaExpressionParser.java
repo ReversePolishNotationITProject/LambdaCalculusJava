@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
+package anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.PNString;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External.PNString;
 
 /**
  * Prefer LambdaExpressionTokenHandler.

@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
+package anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermNamedNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermOpenNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermEntryNode;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.PNString;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.PN;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External.PNString;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External.PN;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

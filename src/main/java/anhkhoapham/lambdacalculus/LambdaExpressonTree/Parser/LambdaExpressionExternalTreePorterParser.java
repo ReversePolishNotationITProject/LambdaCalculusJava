@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser;
+package anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Builders.LambdaTermNodeBuilder;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Builders.LambdaTermNodeBuiltInBuilder;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermFilledExpressionNode;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.ExternalLambdaInfo;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External.ExternalLambdaInfo;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import anhkhoapham.lambdacalculus.LambdaExpressonTree.Parser.External.ExternalLambdaTreeParser;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External.ExternalLambdaTreeParser;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.function.Supplier;
