@@ -23,8 +23,7 @@ public interface LambdaTermExpressionNode extends ReadOnlyTreeNode<LambdaTermExp
     LambdaTermExpressionNode accept(LambdaTermRoot visitingRoot, String substitutedName);    
     
     /**
-     * If isParameterDeclaration() of the node following this return true, promotes to a root.
-     * Else, invoke the entire tree.
+     * invoke the entire tree.
      * @throws UnsupportedOperationException : A root was not provided to this node.
      *
      * @return LambdaTermRoot

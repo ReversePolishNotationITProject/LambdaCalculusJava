@@ -5,6 +5,9 @@
 package anhkhoapham.lambdacalculus.LambdaExpressionTree.Builders;
 
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermExpressionNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermRoundBracketNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermSquareBracketNode;
+import anhkhoapham.lambdacalculus.LambdaExpressionTree.Nodes.LambdaTermUnfilledExpressionNode;
 import anhkhoapham.lambdacalculus.LambdaExpressionTree.Root.LambdaTermRoot;
 import java.util.Collection;
 
@@ -16,9 +19,9 @@ public interface LambdaTermNodeBuilder {
     
     LambdaTermRoot buildRoot(String name, LambdaTermExpressionNode topNode);
     
-    LambdaTermExpressionNode buildNamedNode(String name, Collection<LambdaTermExpressionNode> children);
+    LambdaTermUnfilledExpressionNode buildNamedNode(String name, Collection<LambdaTermExpressionNode> children);
     
-    LambdaTermExpressionNode buildOpenNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children);
+    LambdaTermRoundBracketNode buildOpenNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children);
     
-    LambdaTermExpressionNode buildClosedNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children);
+    LambdaTermSquareBracketNode buildClosedNode(LambdaTermRoot substitutedRoot, Collection<LambdaTermExpressionNode> children);
 }

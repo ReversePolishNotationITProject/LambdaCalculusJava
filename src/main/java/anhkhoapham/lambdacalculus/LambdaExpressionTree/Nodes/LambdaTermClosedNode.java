@@ -13,29 +13,8 @@ import java.util.Objects;
  *
  * @author Khoapa
  */
-public final class LambdaTermClosedNode extends LambdaTermAbstractNode implements LambdaTermFilledExpressionNode {
+public final class LambdaTermClosedNode extends LambdaTermAbstractNode implements LambdaTermSquareBracketNode {
 
-    @Override
-    public int hashCode() {
-        int hash = 5;
-        hash = 17 * hash + Objects.hashCode(substitutedRoot) + super.hashCode();
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final LambdaTermClosedNode other = (LambdaTermClosedNode) obj;
-        return Objects.equals(substitutedRoot, other.substitutedRoot) && super.equals(obj);
-    }
     
     private final LambdaTermRoot substitutedRoot;
     
@@ -46,6 +25,26 @@ public final class LambdaTermClosedNode extends LambdaTermAbstractNode implement
         if (substitutedRoot == null) throw new IllegalArgumentException("substitutedRoot is null.");
         
         this.substitutedRoot = substitutedRoot;
+    }
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 17 * hash + Objects.hashCode(substitutedRoot) + super.hashCode();
+        return hash;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (!(obj instanceof LambdaTermSquareBracketNode)) {
+            return false;
+        }
+        final LambdaTermClosedNode other = (LambdaTermClosedNode) obj;
+        return Objects.equals(substitutedRoot, other.substitutedRoot) && super.equals(obj);
     }
     
     @Override

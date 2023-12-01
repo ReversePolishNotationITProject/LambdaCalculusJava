@@ -11,3 +11,4 @@ package anhkhoapham.lambdacalculus.LambdaExpressionTree.Parser.External;
 public record PNString(String inputString) {
     
 }
+

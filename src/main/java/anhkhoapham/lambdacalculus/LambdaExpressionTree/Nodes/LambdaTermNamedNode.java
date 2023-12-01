@@ -12,7 +12,7 @@ import java.util.Objects;
  *
  * @author Khoapa
  */
-public final class LambdaTermNamedNode extends LambdaTermAbstractNode {
+public final class LambdaTermNamedNode extends LambdaTermAbstractNode implements LambdaTermUnfilledExpressionNode {
 
     private final String name;
     

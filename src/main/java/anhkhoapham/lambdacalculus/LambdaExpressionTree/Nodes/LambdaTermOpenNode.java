@@ -12,7 +12,7 @@ import java.util.Objects;
  *
  * @author Khoapa
  */
-public final class LambdaTermOpenNode extends LambdaTermAbstractNode implements LambdaTermFilledExpressionNode {
+public final class LambdaTermOpenNode extends LambdaTermAbstractNode implements LambdaTermRoundBracketNode {
 
     
     private final LambdaTermRoot substitutedRoot;
@@ -39,7 +39,7 @@ public final class LambdaTermOpenNode extends LambdaTermAbstractNode implements 
         if (obj == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
+        if (!(obj instanceof LambdaTermRoundBracketNode)) {
             return false;
         }
         final LambdaTermOpenNode other = (LambdaTermOpenNode) obj;
